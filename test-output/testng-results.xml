@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-23T14:51:54 CET" name="Suite1" finished-at="2022-11-23T14:51:54 CET" duration-ms="39">
+    <groups>
+      <group name="shopcarttest">
+        <method signature="TestShopCart.AddOneProductToCart()[pri:0, instance:tests.TestShopCart@28f2a10f]" name="AddOneProductToCart" class="tests.TestShopCart"/>
+      </group> <!-- shopcarttest -->
+      <group name="functest">
+        <method signature="TestShopCart.AddOneProductToCart()[pri:0, instance:tests.TestShopCart@28f2a10f]" name="AddOneProductToCart" class="tests.TestShopCart"/>
+      </group> <!-- functest -->
+    </groups>
+    <test started-at="2022-11-23T14:51:54 CET" name="fonctionalTest" finished-at="2022-11-23T14:51:54 CET" duration-ms="39">
+      <class name="tests.TestShopCart">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.TestShopCart@28f2a10f]" started-at="2022-11-23T14:51:54 CET" name="beforeMethod" finished-at="2022-11-23T14:51:54 CET" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="AddOneProductToCart()[pri:0, instance:tests.TestShopCart@28f2a10f]" started-at="2022-11-23T14:51:54 CET" name="AddOneProductToCart" finished-at="2022-11-23T14:51:54 CET" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddOneProductToCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.TestShopCart@28f2a10f]" started-at="2022-11-23T14:51:54 CET" name="afterMethod" finished-at="2022-11-23T14:51:54 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.TestShopCart -->
+    </test> <!-- fonctionalTest -->
+  </suite> <!-- Suite1 -->
+</testng-results>
