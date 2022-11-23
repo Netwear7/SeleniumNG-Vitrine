@@ -1,7 +1,13 @@
 ## Documentation
 Drivers gérés par [WebDriverManager].  
-Preview des résultats de tests disponible [cliquer ici].
 
+Pour un aperçu simple et rapide:  
+Cloner le projet > lancer les tests à partir du fichier testng.xml > Clic droit : Run as > testNG Suite
+
+Il est ensuite possible de regarder les résultats dans le dossiers test-output de plusieurs façon :
+- Via index.html
+- Via testng-results.xml
+- Via un report pouvant être envoyé en email : emailable-report.html
 
 
 - [x] Générer le projet et le déposer sur Github
@@ -13,9 +19,8 @@ Preview des résultats de tests disponible [cliquer ici].
         - Avec exclusion
 - [ ] Créer un deuxième groupe de test
 - [ ] Faire un fichier commentaire reprenant les différentes méthodes de lancement de test
-- [ ] Finaliser le Readme
+- [ ] Se renseigner pour lancer les tests en ligne de commandes et intégrer cela dans un fichier Doc
+- [ ] Finaliser le README
 
 
 [WebDriverManager]: https://github.com/bonigarcia/webdrivermanager/
-[cliquer ici]: https://htmlpreview.github.io/?https://github.com/Netwear7/SeleniumNG-Vitrine/blob/main/test-output/index.html/
-
