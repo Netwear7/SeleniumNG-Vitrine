@@ -2,11 +2,11 @@
 Drivers gérés par [WebDriverManager].  
 
 Pour un aperçu **simple** et **rapide**:  
-Cloner le projet > lancer les tests à partir du fichier **testng.xml** > Clic droit : **Run as > testNG Suite**
+Cloner le projet > lancer les tests à partir du fichier **release1.xml** > Clic droit : **Run as > testNG Suite**
 
 
 
-Il est ensuite possible de regarder les résultats dans le dossiers test-output de plusieurs façon :
+Il est ensuite possible de regarder les résultats dans le dossiers test-output(généré lors du run) de plusieurs façon :
 - Via **index.html**
 - Via **testng-results.xml**
 - Via un report pouvant être envoyé en email : **emailable-report.html**
@@ -26,8 +26,9 @@ Il est ensuite possible de regarder les résultats dans le dossiers test-output 
 - [ ] Se renseigner pour lancer les tests en ligne de commandes et intégrer cela dans un fichier Doc
 
 - [ ] S'amuser avec la génération custom de report
-
 - [ ] Finaliser le README
+
+- [ ] Intégrer Gatling dans le projet
 
 
 [WebDriverManager]: https://github.com/bonigarcia/webdrivermanager/
