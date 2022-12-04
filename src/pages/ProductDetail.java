@@ -56,12 +56,23 @@ public class ProductDetail {
 	
     }
     
-    public void randomChooseQuantity() {
-	
+    
+    /**
+     * Fonction à développer :
+     * https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it
+     * Oups
+     */
+    public void chooseRandomQuantity() {
+	return;
     }
     
+    /**
+     * Fonction à développer :
+     * https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it
+     * Oups
+     */
     public void ClickOnBtnAddCart() {
-	
+	return;
     }
     
     public int getRandomOfValue(int size) {
