@@ -4,9 +4,52 @@ package tests;
 import org.openqa.selenium.WebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
+import org.testng.Reporter;
+import org.testng.annotations.*;
+import pages.Shop;
+import pages.ProductDetail;
+
+
+public class TestShopCart {
+	
+    WebDriver driver;
+    Shop shop;
+    ProductDetail productD;
+ 
+    @Test(invocationCount = 1, groups = { "functest"})
+    public void AddSingleItemToCart() throws InterruptedException {
+	
+	Shop shop = new Shop(driver);
+	String productTitle = shop.ClickOnRandomProduct(); 
+	Reporter.log(productTitle);
+	
+	Thread.sleep(2000);
+	
+	productD = new ProductDetail(driver);
+	String color = productD.chooseRandomColor();
+	String size = productD.chooseRandomSize();
+	Reporter.log("<br>" + color + " - " + size);
+	
+	//Thread.sleep(5000);
+    }
+    
+    
+    
+    //---------------------------------------------------\\
+    //---------------------------------------------------\\
+    @BeforeMethod
+    public void beforeMethod() {
+	driver = WebDriverManager.chromedriver().create(); 
+	driver.manage().window().maximize();
+	driver.get("https://shop.demoqa.com/shop/");
+    }
+    
+    @AfterMethod
+    public void afterMethod() {
+	driver.quit();
+    }
+
+}
 
 /* Quoi tester ? 
  * 
@@ -37,28 +80,3 @@ import org.testng.annotations.AfterMethod;
  * 	- De plusieurs fois le même article			| Test 12: DecrementTotalPriceWithIdenticalItems
  * 	- De plusieurs articles diff= prix total du panier	| Test 13: DecrementTotalPriceWithDifferentItems
  */
-
-public class TestShopCart {
-	
-    WebDriver driver;
- 
-    @Test(groups = { "functest"})
-    public void AddSingleItemToCart() {
-    	  
-    }
-    
-    
-    
-    //---------------------------------------------------\\
-    //---------------------------------------------------\\
-    @BeforeMethod
-    public void beforeMethod() {
-	driver = WebDriverManager.chromedriver().create(); 
-    }
-    
-    @AfterMethod
-    public void afterMethod() {
-	driver.quit();
-    }
-
-}

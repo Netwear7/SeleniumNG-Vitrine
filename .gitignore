@@ -12,3 +12,6 @@ buildNumber.properties
 bin/
 test-output/index.html
 test-output/
+.classpath
+.project
+.settings/
